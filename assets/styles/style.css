@@ -1,0 +1,175 @@
+h1 {
+    position: center;
+    margin-bottom: 0;
+    clear: both;
+}
+
+header {
+    background: url("../images/imagepage1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+h2 {
+    padding-top: 50px;
+    padding-bottom: 20 px;
+}
+
+h3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.corps {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.danger {
+    background-color: #d63c37;
+}
+
+span {
+    color: red;
+}
+
+p {
+    color: black;
+    font-style: normal;
+}
+
+.container {
+    flex-wrap: wrap-reverse;
+}
+
+.align {
+    text-align: right;
+}
+
+.flotte {
+    float: right;
+}
+
+.star::before {
+    content: "\002606";
+    left: -30px;
+    position: absolute;
+    color: red;
+}
+
+.moon::before {
+    content: "\263E";
+    left: -30px;
+    position: absolute;
+    color: red;
+}
+
+.heart::before {
+    content: "\002661";
+    left: -30px;
+    position: absolute;
+    color: red;
+}
+
+/*burger nav*/
+
+.deco {
+    float: right;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#container {
+    height: 30px;
+    padding: 10px 10px;
+}
+
+.burger {
+    position: absolute;
+    top: 21px;
+    margin: auto;
+    left: 0px;
+    right: 10px;
+    height: 5px;
+    width: 30px;
+    background: rgb(12, 11, 11);
+    z-index: 5;
+    transition: background-color 1s ease 0s;
+    -webkit-transition: background-color 1s ease 0s;
+}
+
+.barres {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger1, .burger2, .burger3 {
+    content: "";
+    background: rgb(126, 117, 117);
+    width: 35px;
+    height: 6px;
+    margin: 5px 0;
+    transition: 0.4s;
+    right: 5px;
+    top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.icones {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 20%;
+    margin-right: 20%;
+}
+
+#navbarmenu li {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#navbarmenu {
+    position: fixed;
+    list-style: none;
+    right: 0;
+    top: 0;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+li {
+    list-style-type: none;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    right: 1px;
+    margin-top: 6px;
+    margin-right: 30px;
+}
+
+
+/*Move Burger*/
+
+.change .burger1 {
+    -webkit-transform: rotate(-60 deg) translate(-9px, 6px);
+    transform: rotate(-50deg) translate(-9px, 6px);
+    background-color: red;
+}
+
+.change .burger2 {
+    opacity: 0;
+}
+
+.change .burger3 {
+    -webkit-transform: rotate(60deg) translate(-8px, -8px);
+    transform: rotate(50deg) translate(-8px, -8px);
+    background-color: red;
+}
